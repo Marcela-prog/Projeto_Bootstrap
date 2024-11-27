@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bootstrap</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .carousel-inner img{
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <div class="cotainer-fluid">
+            <a class="navbar-brand" href="#">NatureNav - Uma navegação inspirada na serenidade da natureza.</a>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdnm.westwing.com.br/glossary/uploads/br/2024/01/30231622/tipos-de-flores-nomes-fonte-usnplash.jpg" class="d-block w-100" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cazamoderna.com.br/wp-content/uploads/2020/04/hortensias-azuis-flores.jpg" class="d-block w-100" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.temflores.com.br/public/blog/9/9-flores-que-capturam-a-alegria_g.jpg" class="d-block w-100" alt="Imagem 3">
+            </div>
+        </div> 
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZsb3Jlc3RhfGVufDB8fDB8fHww" class="card-img-top" alt="Card 1">
+                    <div class="card-body">
+                        <h5 class="card-title">EcoGallery</h5>
+                        <p class="card-text"> Uma galeria que celebra a beleza natural.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://wallpapers.com/images/featured/floresta-6sk40qqvtlt496ub.jpg" class="card-img-top" alt="Card 2">
+                    <div class="card-body">
+                        <h5 class="card-title">WildScapeVista</h5>
+                        <p class="card-text">Vista para paisagens selvagens.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://viajarverde.com.br/wp-content/uploads/2016/07/amazon-rainforest-wallpaper-4-810x506.jpg" class="card-img-top" alt="Card 3">
+                    <div class="card-body">
+                        <h5 class="card-title">BloomDisplay</h5>
+                        <p class="card-text">Exposição de flores e floresta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+
+    <div class="footer">
+        &copy; 2024 NatureNav. Todos os direitos reservados.
+    </div>
+</body>
+</html>
